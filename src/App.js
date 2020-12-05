@@ -19,7 +19,7 @@ function App() {
   // GET REQUEST
   const getToDoData = async () => {
     const res = await axios.get(baseURL, config)
-    console.log(res)
+    // console.log(res)
     updateTodos(res.data.records)
   }
 

@@ -1,6 +1,9 @@
-export const baseURL = "https://api.airtable.com/v0/apprfMQBPm7VYkoDQ/todo"
+export const baseURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/todo`
 export const config = {
   headers: {
-    "Authorization": "Bearer keylAQJCqDkTIUf4j"
+    "Authorization": `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
   }
 }
+
+
+console.log(process.env)
