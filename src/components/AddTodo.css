@@ -1,0 +1,45 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.create-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+}
+
+.create-input{
+  height: 30px;
+  width: 400px;
+  font-family: 'Nerko One', cursive;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background: rgb(230, 217, 217);
+  border-radius: 5px;
+  border: solid 2px black; 
+}
+
+.create-title{
+  font-family: 'Nerko One', cursive;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+.create-btn{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 2px black; 
+  background: black;
+  color: rgb(230, 217, 217);
+}
+
+hr{
+  width: 600px
+}
