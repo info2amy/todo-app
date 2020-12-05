@@ -6,4 +6,3 @@ export const config = {
 }
 
 
-console.log(process.env)
