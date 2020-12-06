@@ -1,32 +1,30 @@
-import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 
-import "./AddTodo.css"
+import "./AddTodo.css";
 
 export default function AddTodo(props) {
-
-  const history = useHistory()
+  const history = useHistory();
 
   const [formData, setFormData] = useState({
     name: "",
-    description: ""
-  })
+    description: "",
+  });
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
 
     setFormData({
       ...formData,
-      [name]: value
-    })
-  }
+      [name]: value,
+    });
+  };
 
   const handleSubmit = () => {
-    props.postToDoData(formData)
-    props.triggerRefresh(!props.refresh)
-    history.push('/') // goes home
-  }
-
+    props.postToDoData(formData);
+    props.triggerRefresh(!props.refresh);
+    history.push("/"); // goes home
+  };
 
   return (
     <div className="main">
@@ -51,5 +49,5 @@ export default function AddTodo(props) {
         <input className="create-btn" type="submit" value="Submit" />
       </form>
     </div>
-  )
+  );
 }

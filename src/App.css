@@ -1,23 +1,17 @@
-
-
-.nav-container{
+.nav-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-a{
+a {
   text-decoration: none;
   font-weight: 700;
   color: black;
-  
 }
 
-a:hover{
-  color: rgb(71, 19, 19)
+a:hover {
+  color: rgb(71, 19, 19);
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
